@@ -15,11 +15,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ModeloVistas\Agregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +43,22 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AsesorExt\" />
+    <Folder Include="AsesorInt\" />
+    <Folder Include="Asignacion\" />
+    <Folder Include="Calificaciones\" />
+    <Folder Include="Dictamen\" />
+    <Folder Include="Proyecto\" />
+    <Folder Include="Empresa\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net6.0\MySql.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
