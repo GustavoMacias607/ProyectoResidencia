@@ -27,9 +27,9 @@ Partial Class MostrarResidente
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtNoControl = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.TablaMostrar = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.TablaMostrar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,9 +68,9 @@ Partial Class MostrarResidente
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.txtNoControl)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.txtNombre)
         Me.Panel1.Controls.Add(Me.TablaMostrar)
         Me.Panel1.Location = New System.Drawing.Point(65, 161)
         Me.Panel1.Name = "Panel1"
@@ -87,13 +87,13 @@ Partial Class MostrarResidente
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "No Control:"
         '
-        'TextBox2
+        'txtNoControl
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox2.Location = New System.Drawing.Point(170, 20)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(209, 34)
-        Me.TextBox2.TabIndex = 3
+        Me.txtNoControl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNoControl.Location = New System.Drawing.Point(170, 20)
+        Me.txtNoControl.Name = "txtNoControl"
+        Me.txtNoControl.Size = New System.Drawing.Size(209, 34)
+        Me.txtNoControl.TabIndex = 3
         '
         'Label2
         '
@@ -105,13 +105,13 @@ Partial Class MostrarResidente
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Nombre:"
         '
-        'TextBox1
+        'txtNombre
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(611, 17)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(306, 34)
-        Me.TextBox1.TabIndex = 1
+        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNombre.Location = New System.Drawing.Point(611, 17)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(306, 34)
+        Me.txtNombre.TabIndex = 1
         '
         'TablaMostrar
         '
@@ -152,4 +152,6 @@ Partial Class MostrarResidente
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtNoControl As TextBox
+    Friend WithEvents txtNombre As TextBox
 End Class
