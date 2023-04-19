@@ -171,18 +171,25 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+
+        openChildForm(New AgregarEmpresa())
+
+
         hidenSubmenu()
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        openChildForm(New MostrarEmpresa())
         hidenSubmenu()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        openChildForm(New EliminarEmpresa())
         hidenSubmenu()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        openChildForm(New ModificarEmpresa())
         hidenSubmenu()
     End Sub
 

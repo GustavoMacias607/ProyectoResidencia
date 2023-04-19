@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ModificarResidentes
+Partial Class AgregarAsesorInterno
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,8 +22,9 @@ Partial Class ModificarResidentes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModificarResidentes))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AgregarAsesorInterno))
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtNoControl = New System.Windows.Forms.TextBox()
@@ -39,9 +40,6 @@ Partial Class ModificarResidentes
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtCarrera = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cbEstatus = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnBuscar = New System.Windows.Forms.Button()
         Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.txtxSeguridadSocial = New System.Windows.Forms.TextBox()
@@ -56,7 +54,6 @@ Partial Class ModificarResidentes
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,8 +69,26 @@ Partial Class ModificarResidentes
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(661, 96)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "MODIFICAR RESIDENTE"
+        Me.Label1.Text = "AGREGAR ASESOR INTERNO"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Silver
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(938, 700)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(164, 60)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Guardar"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -82,7 +97,7 @@ Partial Class ModificarResidentes
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(1140, 715)
+        Me.Button2.Location = New System.Drawing.Point(1135, 700)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(164, 60)
         Me.Button2.TabIndex = 12
@@ -235,9 +250,6 @@ Partial Class ModificarResidentes
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.cbEstatus)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnBuscar)
         Me.Panel1.Controls.Add(Me.txtNoSeguridad)
         Me.Panel1.Controls.Add(Me.Label19)
         Me.Panel1.Controls.Add(Me.txtxSeguridadSocial)
@@ -270,50 +282,12 @@ Partial Class ModificarResidentes
         Me.Panel1.Size = New System.Drawing.Size(1263, 508)
         Me.Panel1.TabIndex = 4
         '
-        'cbEstatus
-        '
-        Me.cbEstatus.AutoSize = True
-        Me.cbEstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbEstatus.Location = New System.Drawing.Point(741, 395)
-        Me.cbEstatus.Name = "cbEstatus"
-        Me.cbEstatus.Size = New System.Drawing.Size(107, 30)
-        Me.cbEstatus.TabIndex = 42
-        Me.cbEstatus.Text = "Estatus"
-        Me.cbEstatus.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(1124, 9)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 92)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Examinar"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'btnBuscar
-        '
-        Me.btnBuscar.BackgroundImage = CType(resources.GetObject("btnBuscar.BackgroundImage"), System.Drawing.Image)
-        Me.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnBuscar.FlatAppearance.BorderSize = 0
-        Me.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
-        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBuscar.Location = New System.Drawing.Point(414, 19)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(48, 48)
-        Me.btnBuscar.TabIndex = 40
-        Me.btnBuscar.UseVisualStyleBackColor = True
-        '
         'txtNoSeguridad
         '
         Me.txtNoSeguridad.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtNoSeguridad.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNoSeguridad.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNoSeguridad.Location = New System.Drawing.Point(248, 394)
+        Me.txtNoSeguridad.Location = New System.Drawing.Point(663, 402)
         Me.txtNoSeguridad.Name = "txtNoSeguridad"
         Me.txtNoSeguridad.Size = New System.Drawing.Size(335, 27)
         Me.txtNoSeguridad.TabIndex = 10
@@ -323,7 +297,7 @@ Partial Class ModificarResidentes
         Me.Label19.AutoSize = True
         Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label19.Location = New System.Drawing.Point(248, 399)
+        Me.Label19.Location = New System.Drawing.Point(663, 407)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(338, 29)
         Me.Label19.TabIndex = 39
@@ -439,7 +413,7 @@ Partial Class ModificarResidentes
         Me.Label13.AutoSize = True
         Me.Label13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(67, 394)
+        Me.Label13.Location = New System.Drawing.Point(482, 402)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(175, 29)
         Me.Label13.TabIndex = 27
@@ -456,25 +430,7 @@ Partial Class ModificarResidentes
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Seguridad Social:"
         '
-        'btnGuardar
-        '
-        Me.btnGuardar.BackColor = System.Drawing.Color.Silver
-        Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
-        Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnGuardar.Image = CType(resources.GetObject("btnGuardar.Image"), System.Drawing.Image)
-        Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGuardar.Location = New System.Drawing.Point(944, 715)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(164, 60)
-        Me.btnGuardar.TabIndex = 13
-        Me.btnGuardar.Text = "Guardar"
-        Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnGuardar.UseVisualStyleBackColor = False
-        '
-        'ModificarResidentes
+        'AgregarAsesorInterno
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -482,11 +438,11 @@ Partial Class ModificarResidentes
         Me.AutoSize = True
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1448, 820)
-        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "ModificarResidentes"
+        Me.Name = "AgregarAsesorInterno"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Agregar"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -497,6 +453,7 @@ Partial Class ModificarResidentes
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents txtNoControl As TextBox
@@ -526,8 +483,4 @@ Partial Class ModificarResidentes
     Friend WithEvents Label15 As Label
     Friend WithEvents txtDomicilio As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents btnBuscar As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents btnGuardar As Button
-    Friend WithEvents cbEstatus As CheckBox
 End Class

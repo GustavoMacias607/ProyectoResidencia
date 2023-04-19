@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Residente\AgregarResidente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ModeloVistas\Agregar.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -47,12 +50,10 @@
 
   <ItemGroup>
     <Folder Include="AsesorExt\" />
-    <Folder Include="AsesorInt\" />
     <Folder Include="Asignacion\" />
     <Folder Include="Calificaciones\" />
     <Folder Include="Dictamen\" />
     <Folder Include="Proyecto\" />
-    <Folder Include="Empresa\" />
   </ItemGroup>
 
   <ItemGroup>

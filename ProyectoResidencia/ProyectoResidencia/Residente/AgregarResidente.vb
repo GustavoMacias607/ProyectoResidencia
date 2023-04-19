@@ -2,21 +2,6 @@
 Public Class AgregarResidente
     Dim adCon
     Dim cmCon As MySqlCommand
-    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Close()
-    End Sub
-
-    Private Sub AgregarResidente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim m As New Modelo
@@ -46,5 +31,16 @@ Public Class AgregarResidente
             adCon.close()
 
         End Try
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Dispose()
+        Me.Close()
+    End Sub
+    Private Sub AgregarEmpresa_Load(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub AgregarResidente_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

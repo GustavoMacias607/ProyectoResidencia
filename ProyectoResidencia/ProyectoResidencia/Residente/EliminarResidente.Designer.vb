@@ -41,8 +41,6 @@ Partial Class EliminarResidente
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.txtxSeguridadSocial = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.txtCiudad = New System.Windows.Forms.TextBox()
@@ -53,9 +51,12 @@ Partial Class EliminarResidente
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtDomicilio = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.cbEstatus = New System.Windows.Forms.CheckBox()
+        Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -202,6 +203,7 @@ Partial Class EliminarResidente
         '
         Me.txtNombre.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtNombre.Enabled = False
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtNombre.Location = New System.Drawing.Point(613, 65)
         Me.txtNombre.Name = "txtNombre"
@@ -223,6 +225,7 @@ Partial Class EliminarResidente
         '
         Me.txtCarrera.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtCarrera.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtCarrera.Enabled = False
         Me.txtCarrera.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtCarrera.Location = New System.Drawing.Point(169, 148)
         Me.txtCarrera.Name = "txtCarrera"
@@ -234,10 +237,12 @@ Partial Class EliminarResidente
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.cbEstatus)
         Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnBuscar)
         Me.Panel1.Controls.Add(Me.txtNoSeguridad)
         Me.Panel1.Controls.Add(Me.Label19)
+        Me.Panel1.Controls.Add(Me.btnBuscar)
+        Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.txtxSeguridadSocial)
         Me.Panel1.Controls.Add(Me.Label18)
         Me.Panel1.Controls.Add(Me.txtCiudad)
@@ -248,7 +253,6 @@ Partial Class EliminarResidente
         Me.Panel1.Controls.Add(Me.Label15)
         Me.Panel1.Controls.Add(Me.txtDomicilio)
         Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label13)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.txtCarrera)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -295,31 +299,11 @@ Partial Class EliminarResidente
         Me.btnBuscar.TabIndex = 40
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
-        'txtNoSeguridad
-        '
-        Me.txtNoSeguridad.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtNoSeguridad.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtNoSeguridad.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNoSeguridad.Location = New System.Drawing.Point(663, 402)
-        Me.txtNoSeguridad.Name = "txtNoSeguridad"
-        Me.txtNoSeguridad.Size = New System.Drawing.Size(335, 27)
-        Me.txtNoSeguridad.TabIndex = 10
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label19.Location = New System.Drawing.Point(663, 407)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(338, 29)
-        Me.Label19.TabIndex = 39
-        Me.Label19.Text = "_________________________"
-        '
         'txtxSeguridadSocial
         '
         Me.txtxSeguridadSocial.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtxSeguridadSocial.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtxSeguridadSocial.Enabled = False
         Me.txtxSeguridadSocial.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtxSeguridadSocial.Location = New System.Drawing.Point(692, 308)
         Me.txtxSeguridadSocial.Name = "txtxSeguridadSocial"
@@ -341,6 +325,7 @@ Partial Class EliminarResidente
         '
         Me.txtCiudad.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtCiudad.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtCiudad.Enabled = False
         Me.txtCiudad.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtCiudad.Location = New System.Drawing.Point(165, 229)
         Me.txtCiudad.Name = "txtCiudad"
@@ -362,6 +347,7 @@ Partial Class EliminarResidente
         '
         Me.txtTelefono.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtTelefono.Enabled = False
         Me.txtTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtTelefono.Location = New System.Drawing.Point(186, 310)
         Me.txtTelefono.Name = "txtTelefono"
@@ -383,6 +369,7 @@ Partial Class EliminarResidente
         '
         Me.txtEmail.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEmail.Enabled = False
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtEmail.Location = New System.Drawing.Point(566, 229)
         Me.txtEmail.Name = "txtEmail"
@@ -404,6 +391,7 @@ Partial Class EliminarResidente
         '
         Me.txtDomicilio.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtDomicilio.Enabled = False
         Me.txtDomicilio.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.txtDomicilio.Location = New System.Drawing.Point(608, 148)
         Me.txtDomicilio.Name = "txtDomicilio"
@@ -420,17 +408,6 @@ Partial Class EliminarResidente
         Me.Label9.Size = New System.Drawing.Size(429, 29)
         Me.Label9.TabIndex = 29
         Me.Label9.Text = "________________________________"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(482, 402)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(175, 29)
-        Me.Label13.TabIndex = 27
-        Me.Label13.Text = "No. Seguridad:"
         '
         'Label11
         '
@@ -460,6 +437,51 @@ Partial Class EliminarResidente
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnEliminar.UseVisualStyleBackColor = False
+        '
+        'cbEstatus
+        '
+        Me.cbEstatus.AutoSize = True
+        Me.cbEstatus.Enabled = False
+        Me.cbEstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbEstatus.Location = New System.Drawing.Point(753, 408)
+        Me.cbEstatus.Name = "cbEstatus"
+        Me.cbEstatus.Size = New System.Drawing.Size(107, 30)
+        Me.cbEstatus.TabIndex = 46
+        Me.cbEstatus.Text = "Estatus"
+        Me.cbEstatus.UseVisualStyleBackColor = True
+        '
+        'txtNoSeguridad
+        '
+        Me.txtNoSeguridad.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtNoSeguridad.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtNoSeguridad.Enabled = False
+        Me.txtNoSeguridad.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNoSeguridad.Location = New System.Drawing.Point(260, 407)
+        Me.txtNoSeguridad.Name = "txtNoSeguridad"
+        Me.txtNoSeguridad.Size = New System.Drawing.Size(335, 27)
+        Me.txtNoSeguridad.TabIndex = 43
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.Location = New System.Drawing.Point(260, 412)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(338, 29)
+        Me.Label19.TabIndex = 45
+        Me.Label19.Text = "_________________________"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(79, 407)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(175, 29)
+        Me.Label13.TabIndex = 44
+        Me.Label13.Text = "No. Seguridad:"
         '
         'EliminarResidente
         '
@@ -499,10 +521,7 @@ Partial Class EliminarResidente
     Friend WithEvents Label7 As Label
     Friend WithEvents txtCarrera As TextBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label13 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents txtNoSeguridad As TextBox
-    Friend WithEvents Label19 As Label
     Friend WithEvents txtxSeguridadSocial As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents txtCiudad As TextBox
@@ -516,4 +535,8 @@ Partial Class EliminarResidente
     Friend WithEvents btnBuscar As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEliminar As Button
+    Friend WithEvents cbEstatus As CheckBox
+    Friend WithEvents txtNoSeguridad As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label13 As Label
 End Class

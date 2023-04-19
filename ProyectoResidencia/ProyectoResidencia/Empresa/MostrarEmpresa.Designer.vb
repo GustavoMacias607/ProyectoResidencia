@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MostrarResidente
+Partial Class MostrarEmpresa
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,12 +22,12 @@ Partial Class MostrarResidente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MostrarResidente))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MostrarEmpresa))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtNoControl = New System.Windows.Forms.TextBox()
+        Me.txtRFC = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.TablaMostrar = New System.Windows.Forms.DataGridView()
@@ -41,12 +41,11 @@ Partial Class MostrarResidente
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(427, 37)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label1.Location = New System.Drawing.Point(440, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(557, 96)
+        Me.Label1.Size = New System.Drawing.Size(544, 96)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "MOSTRAR RESIDENTE"
+        Me.Label1.Text = "MOSTRAR EMPRESA"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button2
@@ -65,11 +64,10 @@ Partial Class MostrarResidente
         '
         'Panel1
         '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.txtNoControl)
+        Me.Panel1.Controls.Add(Me.txtRFC)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.txtNombre)
         Me.Panel1.Controls.Add(Me.TablaMostrar)
@@ -84,17 +82,18 @@ Partial Class MostrarResidente
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label3.Location = New System.Drawing.Point(44, 23)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(114, 28)
+        Me.Label3.Size = New System.Drawing.Size(50, 28)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "No Control:"
+        Me.Label3.Text = "RFC:"
         '
-        'txtNoControl
+        'txtRFC
         '
-        Me.txtNoControl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNoControl.Location = New System.Drawing.Point(170, 20)
-        Me.txtNoControl.Name = "txtNoControl"
-        Me.txtNoControl.Size = New System.Drawing.Size(209, 34)
-        Me.txtNoControl.TabIndex = 3
+        Me.txtRFC.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtRFC.ImeMode = System.Windows.Forms.ImeMode.[On]
+        Me.txtRFC.Location = New System.Drawing.Point(100, 20)
+        Me.txtRFC.Name = "txtRFC"
+        Me.txtRFC.Size = New System.Drawing.Size(209, 34)
+        Me.txtRFC.TabIndex = 3
         '
         'Label2
         '
@@ -124,7 +123,7 @@ Partial Class MostrarResidente
         Me.TablaMostrar.Size = New System.Drawing.Size(1272, 460)
         Me.TablaMostrar.TabIndex = 0
         '
-        'MostrarResidente
+        'MostrarEmpresa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -134,7 +133,7 @@ Partial Class MostrarResidente
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "MostrarResidente"
+        Me.Name = "MostrarEmpresa"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Agregar"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -153,6 +152,6 @@ Partial Class MostrarResidente
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents txtNoControl As TextBox
+    Friend WithEvents txtRFC As TextBox
     Friend WithEvents txtNombre As TextBox
 End Class
