@@ -48,29 +48,34 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
-        openChildForm(New Agregar())
+        openChildForm(New AgregarSolicitud())
 
 
         hidenSubmenu()
     End Sub
 
     Private Sub btnMostrar_Click(sender As Object, e As EventArgs) Handles btnMostrar.Click
+        openChildForm(New MostrarSolicitud())
         hidenSubmenu()
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        openChildForm(New EliminarSolicitud())
         hidenSubmenu()
     End Sub
 
     Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnModificar.Click
+        openChildForm(New ModificarSolicitud())
         hidenSubmenu()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        openChildForm(New AgregarAsignacion())
         hidenSubmenu()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        openChildForm(New MostrarAsignacion())
         hidenSubmenu()
     End Sub
 
@@ -119,19 +124,22 @@ Public Class MenuPrincipal
         hidenSubmenu()
     End Sub
 
-    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+    Private Sub Button19_Click(sender As Object, e As EventArgs)
         hidenSubmenu()
     End Sub
 
     Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        openChildForm(New MostrarProyecto())
         hidenSubmenu()
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        openChildForm(New EliminarProyecto())
         hidenSubmenu()
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        openChildForm(New ModificarProyecto())
         hidenSubmenu()
     End Sub
 
@@ -194,10 +202,12 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        openChildForm(New AgregarDictamen())
         hidenSubmenu()
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        openChildForm(New MostrarDictamen())
         hidenSubmenu()
     End Sub
 
@@ -210,34 +220,42 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        openChildForm(New AgregarAsesorInterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        openChildForm(New MostrarAsesorInterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        openChildForm(New EliminarAsesorInterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        openChildForm(New ModificarAsesorInterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button35_Click(sender As Object, e As EventArgs) Handles Button35.Click
+        openChildForm(New AgregarAsesorExterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
+        openChildForm(New MostrarAsesorExterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button33_Click(sender As Object, e As EventArgs) Handles Button33.Click
+        openChildForm(New EliminarAsesorExterno())
         hidenSubmenu()
     End Sub
 
     Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        openChildForm(New ModificarAsesorExterno())
         hidenSubmenu()
     End Sub
 
@@ -247,5 +265,10 @@ Public Class MenuPrincipal
 
     Private Sub PanelHijos_Paint(sender As Object, e As PaintEventArgs) Handles PanelHijos.Paint
 
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Dispose()
+        Me.Close()
     End Sub
 End Class

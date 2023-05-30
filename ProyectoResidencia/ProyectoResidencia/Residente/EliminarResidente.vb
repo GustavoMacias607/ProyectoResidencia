@@ -52,13 +52,14 @@ Public Class EliminarResidente
                 txtNoControl.Text = row(0).ToString()
                 txtNombre.Text = row(1).ToString()
                 txtCarrera.Text = row(2).ToString()
-                txtDomicilio.Text = row(3).ToString()
-                txtEmail.Text = row(4).ToString()
-                txtCiudad.Text = row(5).ToString()
-                txtTelefono.Text = row(6).ToString()
-                txtxSeguridadSocial.Text = row(7).ToString()
-                txtNoSeguridad.Text = row(8).ToString()
-                cbEstatus.Checked = row(9).ToString()
+                cbSexo.Text = row(3).ToString()
+                txtDomicilio.Text = row(4).ToString()
+                txtEmail.Text = row(5).ToString()
+                txtCiudad.Text = row(6).ToString()
+                txtTelefono.Text = row(7).ToString()
+                txtxSeguridadSocial.Text = row(8).ToString()
+                txtNoSeguridad.Text = row(9).ToString()
+                cbEstatus.SelectedItem = Est(row(10).ToString())
 
             Next
 
@@ -69,5 +70,12 @@ Public Class EliminarResidente
             adCon.Close()
         End Try
     End Sub
+    Public Function Est(ByVal valor As Integer) As String
+        If valor.Equals(1) Then
+            Return "Activo"
+        Else
+            Return "Inactivo"
+        End If
+    End Function
 
 End Class

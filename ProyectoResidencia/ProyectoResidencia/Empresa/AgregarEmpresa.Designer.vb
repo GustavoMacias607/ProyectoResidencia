@@ -40,7 +40,6 @@ Partial Class AgregarEmpresa
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtSector = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cbFirma = New System.Windows.Forms.CheckBox()
         Me.txtFax = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
@@ -63,6 +62,9 @@ Partial Class AgregarEmpresa
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtFirma = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -259,7 +261,9 @@ Partial Class AgregarEmpresa
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.cbFirma)
+        Me.Panel1.Controls.Add(Me.txtFirma)
+        Me.Panel1.Controls.Add(Me.Label25)
+        Me.Panel1.Controls.Add(Me.Label26)
         Me.Panel1.Controls.Add(Me.txtFax)
         Me.Panel1.Controls.Add(Me.Label23)
         Me.Panel1.Controls.Add(Me.Label24)
@@ -299,17 +303,6 @@ Partial Class AgregarEmpresa
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1263, 508)
         Me.Panel1.TabIndex = 4
-        '
-        'cbFirma
-        '
-        Me.cbFirma.AutoSize = True
-        Me.cbFirma.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbFirma.Location = New System.Drawing.Point(1046, 414)
-        Me.cbFirma.Name = "cbFirma"
-        Me.cbFirma.Size = New System.Drawing.Size(83, 29)
-        Me.cbFirma.TabIndex = 13
-        Me.cbFirma.Text = "Firma"
-        Me.cbFirma.UseVisualStyleBackColor = True
         '
         'txtFax
         '
@@ -545,6 +538,38 @@ Partial Class AgregarEmpresa
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Titular:"
         '
+        'txtFirma
+        '
+        Me.txtFirma.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtFirma.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtFirma.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtFirma.Location = New System.Drawing.Point(628, 402)
+        Me.txtFirma.Name = "txtFirma"
+        Me.txtFirma.Size = New System.Drawing.Size(234, 20)
+        Me.txtFirma.TabIndex = 50
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label25.Location = New System.Drawing.Point(628, 407)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(234, 20)
+        Me.Label25.TabIndex = 52
+        Me.Label25.Text = "_________________________"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label26.Location = New System.Drawing.Point(551, 402)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(57, 20)
+        Me.Label26.TabIndex = 51
+        Me.Label26.Text = "Firma:"
+        '
         'AgregarEmpresa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -603,8 +628,10 @@ Partial Class AgregarEmpresa
     Friend WithEvents txtColonia As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents cbFirma As CheckBox
     Friend WithEvents txtFax As TextBox
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
+    Friend WithEvents txtFirma As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
 End Class

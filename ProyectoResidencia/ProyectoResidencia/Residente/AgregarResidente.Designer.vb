@@ -40,6 +40,7 @@ Partial Class AgregarResidente
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtCarrera = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.txtxSeguridadSocial = New System.Windows.Forms.TextBox()
@@ -54,6 +55,7 @@ Partial Class AgregarResidente
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.cbSexo = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -110,7 +112,7 @@ Partial Class AgregarResidente
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(217, 70)
+        Me.Label3.Location = New System.Drawing.Point(208, 68)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(208, 29)
         Me.Label3.TabIndex = 3
@@ -121,7 +123,7 @@ Partial Class AgregarResidente
         Me.txtNoControl.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.txtNoControl.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNoControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNoControl.Location = New System.Drawing.Point(217, 65)
+        Me.txtNoControl.Location = New System.Drawing.Point(208, 63)
         Me.txtNoControl.Name = "txtNoControl"
         Me.txtNoControl.Size = New System.Drawing.Size(206, 27)
         Me.txtNoControl.TabIndex = 2
@@ -131,7 +133,7 @@ Partial Class AgregarResidente
         Me.Label2.AutoSize = True
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(76, 67)
+        Me.Label2.Location = New System.Drawing.Point(67, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(135, 29)
         Me.Label2.TabIndex = 1
@@ -250,6 +252,8 @@ Partial Class AgregarResidente
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.cbSexo)
+        Me.Panel1.Controls.Add(Me.Label21)
         Me.Panel1.Controls.Add(Me.txtNoSeguridad)
         Me.Panel1.Controls.Add(Me.Label19)
         Me.Panel1.Controls.Add(Me.txtxSeguridadSocial)
@@ -281,6 +285,17 @@ Partial Class AgregarResidente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1263, 508)
         Me.Panel1.TabIndex = 4
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label21.Location = New System.Drawing.Point(67, 400)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(74, 29)
+        Me.Label21.TabIndex = 41
+        Me.Label21.Text = "Sexo:"
         '
         'txtNoSeguridad
         '
@@ -430,6 +445,16 @@ Partial Class AgregarResidente
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Seguridad Social:"
         '
+        'cbSexo
+        '
+        Me.cbSexo.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbSexo.FormattingEnabled = True
+        Me.cbSexo.Items.AddRange(New Object() {"H", "M"})
+        Me.cbSexo.Location = New System.Drawing.Point(147, 400)
+        Me.cbSexo.Name = "cbSexo"
+        Me.cbSexo.Size = New System.Drawing.Size(94, 36)
+        Me.cbSexo.TabIndex = 42
+        '
         'AgregarResidente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -483,4 +508,6 @@ Partial Class AgregarResidente
     Friend WithEvents Label15 As Label
     Friend WithEvents txtDomicilio As TextBox
     Friend WithEvents Label9 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents cbSexo As ComboBox
 End Class

@@ -40,9 +40,7 @@ Partial Class EliminarEmpresa
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtSector = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cbEstatus = New System.Windows.Forms.CheckBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.cbFirma = New System.Windows.Forms.CheckBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.txtFax = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -66,6 +64,11 @@ Partial Class EliminarEmpresa
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.cbEstatus = New System.Windows.Forms.ComboBox()
+        Me.txtFirma = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -264,11 +267,14 @@ Partial Class EliminarEmpresa
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.cbEstatus)
+        Me.Panel1.Controls.Add(Me.Label34)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.cbFirma)
+        Me.Panel1.Controls.Add(Me.cbEstatus)
         Me.Panel1.Controls.Add(Me.btnBuscar)
+        Me.Panel1.Controls.Add(Me.txtFirma)
+        Me.Panel1.Controls.Add(Me.Label25)
         Me.Panel1.Controls.Add(Me.txtFax)
+        Me.Panel1.Controls.Add(Me.Label26)
         Me.Panel1.Controls.Add(Me.Label23)
         Me.Panel1.Controls.Add(Me.Label24)
         Me.Panel1.Controls.Add(Me.txtCP)
@@ -308,18 +314,6 @@ Partial Class EliminarEmpresa
         Me.Panel1.Size = New System.Drawing.Size(1263, 508)
         Me.Panel1.TabIndex = 4
         '
-        'cbEstatus
-        '
-        Me.cbEstatus.AutoSize = True
-        Me.cbEstatus.Enabled = False
-        Me.cbEstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbEstatus.Location = New System.Drawing.Point(353, 451)
-        Me.cbEstatus.Name = "cbEstatus"
-        Me.cbEstatus.Size = New System.Drawing.Size(99, 29)
-        Me.cbEstatus.TabIndex = 14
-        Me.cbEstatus.Text = "Estatus"
-        Me.cbEstatus.UseVisualStyleBackColor = True
-        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
@@ -332,18 +326,6 @@ Partial Class EliminarEmpresa
         Me.Button3.Text = "Examinar"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'cbFirma
-        '
-        Me.cbFirma.AutoSize = True
-        Me.cbFirma.Enabled = False
-        Me.cbFirma.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbFirma.Location = New System.Drawing.Point(1046, 414)
-        Me.cbFirma.Name = "cbFirma"
-        Me.cbFirma.Size = New System.Drawing.Size(83, 29)
-        Me.cbFirma.TabIndex = 13
-        Me.cbFirma.Text = "Firma"
-        Me.cbFirma.UseVisualStyleBackColor = True
         '
         'btnBuscar
         '
@@ -602,6 +584,61 @@ Partial Class EliminarEmpresa
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Titular:"
         '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label34.Location = New System.Drawing.Point(805, 415)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(71, 20)
+        Me.Label34.TabIndex = 85
+        Me.Label34.Text = "Estatus:"
+        '
+        'cbEstatus
+        '
+        Me.cbEstatus.Enabled = False
+        Me.cbEstatus.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbEstatus.FormattingEnabled = True
+        Me.cbEstatus.Items.AddRange(New Object() {"Activo", "Inactivo"})
+        Me.cbEstatus.Location = New System.Drawing.Point(882, 409)
+        Me.cbEstatus.Name = "cbEstatus"
+        Me.cbEstatus.Size = New System.Drawing.Size(202, 31)
+        Me.cbEstatus.TabIndex = 84
+        '
+        'txtFirma
+        '
+        Me.txtFirma.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtFirma.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtFirma.Enabled = False
+        Me.txtFirma.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtFirma.Location = New System.Drawing.Point(478, 410)
+        Me.txtFirma.Name = "txtFirma"
+        Me.txtFirma.Size = New System.Drawing.Size(234, 20)
+        Me.txtFirma.TabIndex = 81
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label25.Location = New System.Drawing.Point(478, 415)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(234, 20)
+        Me.Label25.TabIndex = 83
+        Me.Label25.Text = "_________________________"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label26.Location = New System.Drawing.Point(401, 410)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(57, 20)
+        Me.Label26.TabIndex = 82
+        Me.Label26.Text = "Firma:"
+        '
         'EliminarEmpresa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -660,11 +697,14 @@ Partial Class EliminarEmpresa
     Friend WithEvents txtColonia As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents cbFirma As CheckBox
     Friend WithEvents txtFax As TextBox
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents btnBuscar As Button
-    Friend WithEvents cbEstatus As CheckBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents cbEstatus As ComboBox
+    Friend WithEvents txtFirma As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
 End Class

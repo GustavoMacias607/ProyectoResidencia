@@ -60,8 +60,8 @@ Public Class EliminarEmpresa
                 txtTelefono.Text = row(9).ToString()
                 txtTitular.Text = row(10).ToString()
                 txtPuesto.Text = row(11).ToString()
-                cbFirma.Checked = row(12).ToString()
-                cbEstatus.Checked = row(13).ToString()
+                txtFirma.Text = row(12).ToString()
+                cbEstatus.SelectedItem = Est(row(13).ToString())
 
             Next
 
@@ -70,5 +70,13 @@ Public Class EliminarEmpresa
         Finally
             adCon.Close()
         End Try
+
     End Sub
+    Public Function Est(ByVal valor As Integer) As String
+        If valor.Equals(1) Then
+            Return "Activo"
+        Else
+            Return "Inactivo"
+        End If
+    End Function
 End Class
