@@ -33,7 +33,7 @@ Public Class AgregarEmpresa
             cmCon.Parameters.AddWithValue("?pTelefono", txtTelefono.Text)
             cmCon.Parameters.AddWithValue("?pTitular", txtTitular.Text)
             cmCon.Parameters.AddWithValue("?pPuesto", txtPuesto.Text)
-            cmCon.Parameters.AddWithValue("?pFirma", cbFirma.Checked)
+            cmCon.Parameters.AddWithValue("?pFirma", txtFirma.Text)
             cmCon.CommandText = sentencia
             cmCon.ExecuteNonQuery()
             MsgBox("Datos guardados")

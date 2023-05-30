@@ -30,8 +30,8 @@ Public Class ModificarEmpresa
             cmCon.Parameters.AddWithValue("?pTelefono", txtTelefono.Text)
             cmCon.Parameters.AddWithValue("?pTitular", txtTitular.Text)
             cmCon.Parameters.AddWithValue("?pPuesto", txtPuesto.Text)
-            cmCon.Parameters.AddWithValue("?pFirma", cbFirma.Checked)
-            cmCon.Parameters.AddWithValue("?pEstatus", cbEstatus.Checked)
+            cmCon.Parameters.AddWithValue("?pFirma", txtFirma.Text)
+            cmCon.Parameters.AddWithValue("?pEstatus", comvEst(cbEstatus.SelectedItem))
             cmCon.CommandText = sentencia
             cmCon.ExecuteNonQuery()
             MsgBox("Datos guardados")
@@ -43,6 +43,22 @@ Public Class ModificarEmpresa
         End Try
     End Sub
 
+    Public Function Est(ByVal valor As Integer) As String
+        If valor.Equals(1) Then
+            Return "Activo"
+        Else
+            Return "Inactivo"
+        End If
+    End Function
+    Public Function comvEst(ByVal texto As String) As Integer
+
+
+        If texto.Equals("Activo") Then
+            Return 1
+        Else
+            Return 0
+        End If
+    End Function
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Dispose()
         Me.Close()
@@ -75,8 +91,8 @@ Public Class ModificarEmpresa
                 txtTelefono.Text = row(9).ToString()
                 txtTitular.Text = row(10).ToString()
                 txtPuesto.Text = row(11).ToString()
-                cbFirma.Checked = row(12).ToString()
-                cbEstatus.Checked = row(13).ToString()
+                txtFirma.Text = row(12).ToString()
+                cbEstatus.SelectedItem = Est(row(13).ToString())
 
             Next
 

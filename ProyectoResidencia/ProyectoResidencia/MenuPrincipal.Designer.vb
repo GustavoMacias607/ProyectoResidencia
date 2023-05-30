@@ -55,7 +55,6 @@ Partial Class MenuPrincipal
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
         Me.btnProyecto = New System.Windows.Forms.Button()
         Me.PanelCalificacionesSubMenu = New System.Windows.Forms.Panel()
         Me.Button11 = New System.Windows.Forms.Button()
@@ -148,7 +147,7 @@ Partial Class MenuPrincipal
         Me.btnSalir.ForeColor = System.Drawing.Color.Black
         Me.btnSalir.Image = CType(resources.GetObject("btnSalir.Image"), System.Drawing.Image)
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSalir.Location = New System.Drawing.Point(0, 2365)
+        Me.btnSalir.Location = New System.Drawing.Point(0, 2320)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Padding = New System.Windows.Forms.Padding(0, 0, 145, 0)
         Me.btnSalir.Size = New System.Drawing.Size(279, 45)
@@ -172,7 +171,7 @@ Partial Class MenuPrincipal
         Me.btnHerramientas.ForeColor = System.Drawing.Color.Black
         Me.btnHerramientas.Image = CType(resources.GetObject("btnHerramientas.Image"), System.Drawing.Image)
         Me.btnHerramientas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnHerramientas.Location = New System.Drawing.Point(0, 2320)
+        Me.btnHerramientas.Location = New System.Drawing.Point(0, 2275)
         Me.btnHerramientas.Name = "btnHerramientas"
         Me.btnHerramientas.Padding = New System.Windows.Forms.Padding(0, 0, 42, 0)
         Me.btnHerramientas.Size = New System.Drawing.Size(279, 45)
@@ -196,7 +195,7 @@ Partial Class MenuPrincipal
         Me.btnReportes.ForeColor = System.Drawing.Color.Black
         Me.btnReportes.Image = CType(resources.GetObject("btnReportes.Image"), System.Drawing.Image)
         Me.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReportes.Location = New System.Drawing.Point(0, 2275)
+        Me.btnReportes.Location = New System.Drawing.Point(0, 2230)
         Me.btnReportes.Name = "btnReportes"
         Me.btnReportes.Padding = New System.Windows.Forms.Padding(0, 0, 90, 0)
         Me.btnReportes.Size = New System.Drawing.Size(279, 45)
@@ -213,7 +212,7 @@ Partial Class MenuPrincipal
         Me.PanelAsesorExtSubMenu.Controls.Add(Me.Button34)
         Me.PanelAsesorExtSubMenu.Controls.Add(Me.Button35)
         Me.PanelAsesorExtSubMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelAsesorExtSubMenu.Location = New System.Drawing.Point(0, 2095)
+        Me.PanelAsesorExtSubMenu.Location = New System.Drawing.Point(0, 2050)
         Me.PanelAsesorExtSubMenu.Name = "PanelAsesorExtSubMenu"
         Me.PanelAsesorExtSubMenu.Size = New System.Drawing.Size(279, 180)
         Me.PanelAsesorExtSubMenu.TabIndex = 18
@@ -317,7 +316,7 @@ Partial Class MenuPrincipal
         Me.btnAsesorExt.ForeColor = System.Drawing.Color.Black
         Me.btnAsesorExt.Image = CType(resources.GetObject("btnAsesorExt.Image"), System.Drawing.Image)
         Me.btnAsesorExt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAsesorExt.Location = New System.Drawing.Point(0, 2050)
+        Me.btnAsesorExt.Location = New System.Drawing.Point(0, 2005)
         Me.btnAsesorExt.Name = "btnAsesorExt"
         Me.btnAsesorExt.Padding = New System.Windows.Forms.Padding(0, 0, 20, 0)
         Me.btnAsesorExt.Size = New System.Drawing.Size(279, 45)
@@ -334,7 +333,7 @@ Partial Class MenuPrincipal
         Me.PanelAsesorIntSubMenu.Controls.Add(Me.Button29)
         Me.PanelAsesorIntSubMenu.Controls.Add(Me.Button30)
         Me.PanelAsesorIntSubMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelAsesorIntSubMenu.Location = New System.Drawing.Point(0, 1870)
+        Me.PanelAsesorIntSubMenu.Location = New System.Drawing.Point(0, 1825)
         Me.PanelAsesorIntSubMenu.Name = "PanelAsesorIntSubMenu"
         Me.PanelAsesorIntSubMenu.Size = New System.Drawing.Size(279, 180)
         Me.PanelAsesorIntSubMenu.TabIndex = 16
@@ -438,7 +437,7 @@ Partial Class MenuPrincipal
         Me.btnAsesorInt.ForeColor = System.Drawing.Color.Black
         Me.btnAsesorInt.Image = CType(resources.GetObject("btnAsesorInt.Image"), System.Drawing.Image)
         Me.btnAsesorInt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAsesorInt.Location = New System.Drawing.Point(0, 1825)
+        Me.btnAsesorInt.Location = New System.Drawing.Point(0, 1780)
         Me.btnAsesorInt.Name = "btnAsesorInt"
         Me.btnAsesorInt.Padding = New System.Windows.Forms.Padding(0, 0, 28, 0)
         Me.btnAsesorInt.Size = New System.Drawing.Size(279, 45)
@@ -455,7 +454,7 @@ Partial Class MenuPrincipal
         Me.PanelDictamenSubMenu.Controls.Add(Me.Button24)
         Me.PanelDictamenSubMenu.Controls.Add(Me.Button25)
         Me.PanelDictamenSubMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelDictamenSubMenu.Location = New System.Drawing.Point(0, 1645)
+        Me.PanelDictamenSubMenu.Location = New System.Drawing.Point(0, 1600)
         Me.PanelDictamenSubMenu.Name = "PanelDictamenSubMenu"
         Me.PanelDictamenSubMenu.Size = New System.Drawing.Size(279, 180)
         Me.PanelDictamenSubMenu.TabIndex = 14
@@ -559,7 +558,7 @@ Partial Class MenuPrincipal
         Me.btnDictamen.ForeColor = System.Drawing.Color.Black
         Me.btnDictamen.Image = CType(resources.GetObject("btnDictamen.Image"), System.Drawing.Image)
         Me.btnDictamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDictamen.Location = New System.Drawing.Point(0, 1600)
+        Me.btnDictamen.Location = New System.Drawing.Point(0, 1555)
         Me.btnDictamen.Name = "btnDictamen"
         Me.btnDictamen.Padding = New System.Windows.Forms.Padding(0, 0, 88, 0)
         Me.btnDictamen.Size = New System.Drawing.Size(279, 45)
@@ -576,7 +575,7 @@ Partial Class MenuPrincipal
         Me.PanelEmpresaSubMenu.Controls.Add(Me.Button15)
         Me.PanelEmpresaSubMenu.Controls.Add(Me.Button20)
         Me.PanelEmpresaSubMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelEmpresaSubMenu.Location = New System.Drawing.Point(0, 1420)
+        Me.PanelEmpresaSubMenu.Location = New System.Drawing.Point(0, 1375)
         Me.PanelEmpresaSubMenu.Name = "PanelEmpresaSubMenu"
         Me.PanelEmpresaSubMenu.Size = New System.Drawing.Size(279, 180)
         Me.PanelEmpresaSubMenu.TabIndex = 12
@@ -680,7 +679,7 @@ Partial Class MenuPrincipal
         Me.btnEmpresa.ForeColor = System.Drawing.Color.Black
         Me.btnEmpresa.Image = CType(resources.GetObject("btnEmpresa.Image"), System.Drawing.Image)
         Me.btnEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEmpresa.Location = New System.Drawing.Point(0, 1375)
+        Me.btnEmpresa.Location = New System.Drawing.Point(0, 1330)
         Me.btnEmpresa.Name = "btnEmpresa"
         Me.btnEmpresa.Padding = New System.Windows.Forms.Padding(0, 0, 93, 0)
         Me.btnEmpresa.Size = New System.Drawing.Size(279, 45)
@@ -695,11 +694,10 @@ Partial Class MenuPrincipal
         Me.PanelProyectoSubMenu.Controls.Add(Me.Button16)
         Me.PanelProyectoSubMenu.Controls.Add(Me.Button17)
         Me.PanelProyectoSubMenu.Controls.Add(Me.Button18)
-        Me.PanelProyectoSubMenu.Controls.Add(Me.Button19)
         Me.PanelProyectoSubMenu.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelProyectoSubMenu.Location = New System.Drawing.Point(0, 1195)
         Me.PanelProyectoSubMenu.Name = "PanelProyectoSubMenu"
-        Me.PanelProyectoSubMenu.Size = New System.Drawing.Size(279, 180)
+        Me.PanelProyectoSubMenu.Size = New System.Drawing.Size(279, 135)
         Me.PanelProyectoSubMenu.TabIndex = 10
         '
         'Button16
@@ -714,7 +712,7 @@ Partial Class MenuPrincipal
         Me.Button16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button16.Image = CType(resources.GetObject("Button16.Image"), System.Drawing.Image)
         Me.Button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button16.Location = New System.Drawing.Point(0, 135)
+        Me.Button16.Location = New System.Drawing.Point(0, 90)
         Me.Button16.Name = "Button16"
         Me.Button16.Padding = New System.Windows.Forms.Padding(0, 0, 105, 0)
         Me.Button16.Size = New System.Drawing.Size(279, 45)
@@ -735,7 +733,7 @@ Partial Class MenuPrincipal
         Me.Button17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button17.Image = CType(resources.GetObject("Button17.Image"), System.Drawing.Image)
         Me.Button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button17.Location = New System.Drawing.Point(0, 90)
+        Me.Button17.Location = New System.Drawing.Point(0, 45)
         Me.Button17.Name = "Button17"
         Me.Button17.Padding = New System.Windows.Forms.Padding(0, 0, 120, 0)
         Me.Button17.Size = New System.Drawing.Size(279, 45)
@@ -756,7 +754,7 @@ Partial Class MenuPrincipal
         Me.Button18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button18.Image = CType(resources.GetObject("Button18.Image"), System.Drawing.Image)
         Me.Button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button18.Location = New System.Drawing.Point(0, 45)
+        Me.Button18.Location = New System.Drawing.Point(0, 0)
         Me.Button18.Name = "Button18"
         Me.Button18.Padding = New System.Windows.Forms.Padding(0, 0, 65, 0)
         Me.Button18.Size = New System.Drawing.Size(279, 45)
@@ -764,27 +762,6 @@ Partial Class MenuPrincipal
         Me.Button18.Text = "Mostrar/Buscar"
         Me.Button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button18.UseVisualStyleBackColor = False
-        '
-        'Button19
-        '
-        Me.Button19.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button19.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button19.FlatAppearance.BorderColor = System.Drawing.Color.Gray
-        Me.Button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
-        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button19.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button19.Image = CType(resources.GetObject("Button19.Image"), System.Drawing.Image)
-        Me.Button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button19.Location = New System.Drawing.Point(0, 0)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Padding = New System.Windows.Forms.Padding(0, 0, 120, 0)
-        Me.Button19.Size = New System.Drawing.Size(279, 45)
-        Me.Button19.TabIndex = 0
-        Me.Button19.Text = "Agregar"
-        Me.Button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button19.UseVisualStyleBackColor = False
         '
         'btnProyecto
         '
@@ -1400,7 +1377,6 @@ Partial Class MenuPrincipal
     Friend WithEvents Button16 As Button
     Friend WithEvents Button17 As Button
     Friend WithEvents Button18 As Button
-    Friend WithEvents Button19 As Button
     Friend WithEvents btnProyecto As Button
     Friend WithEvents PanelCalificacionesSubMenu As Panel
     Friend WithEvents Button11 As Button

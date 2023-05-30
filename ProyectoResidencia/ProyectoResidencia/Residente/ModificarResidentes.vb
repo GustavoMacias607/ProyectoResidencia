@@ -11,7 +11,7 @@ Public Class ModificarResidentes
         Me.Close()
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbEstatus.CheckedChanged
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -20,7 +20,7 @@ Public Class ModificarResidentes
         Try
             adCon = New MySqlConnection(m.conexion)
             adCon.open()
-            Dim sentencia As String = "call sp_ResidenteModificar(?pNoControl,?pNombre,?pCarrera,?pDomicilio,?pEmail,?pCiudad,?pTelefono,?pSeguridadSocial,?pNoSeguridad,?pEstatus)"
+            Dim sentencia As String = "call sp_ResidenteModificar(?pNoControl,?pNombre,?pCarrera,?pSexo,?pDomicilio,?pEmail,?pCiudad,?pTelefono,?pSeguridadSocial,?pNoSeguridad,?pEstatus)"
             cmCon = New MySqlCommand
             cmCon.Connection = adCon
             cmCon.CommandType = CommandType.Text
@@ -28,13 +28,14 @@ Public Class ModificarResidentes
             cmCon.Parameters.AddWithValue("?pNoControl", txtNoControl.Text)
             cmCon.Parameters.AddWithValue("?pNombre", txtNombre.Text)
             cmCon.Parameters.AddWithValue("?pCarrera", txtCarrera.Text)
+            cmCon.Parameters.AddWithValue("?pSexo", cbSexo.SelectedItem)
             cmCon.Parameters.AddWithValue("?pDomicilio", txtDomicilio.Text)
             cmCon.Parameters.AddWithValue("?pEmail", txtEmail.Text)
             cmCon.Parameters.AddWithValue("?pCiudad", txtCiudad.Text)
             cmCon.Parameters.AddWithValue("?pTelefono", txtTelefono.Text)
             cmCon.Parameters.AddWithValue("?pSeguridadSocial", txtxSeguridadSocial.Text)
             cmCon.Parameters.AddWithValue("?pNoSeguridad", txtNoSeguridad.Text)
-            cmCon.Parameters.AddWithValue("?pEstatus", cbEstatus.Checked)
+            cmCon.Parameters.AddWithValue("?pEstatus", comvEst(cbEstatus.SelectedItem))
             cmCon.CommandText = sentencia
             cmCon.ExecuteNonQuery()
             MsgBox("Datos guardados")
@@ -45,6 +46,15 @@ Public Class ModificarResidentes
 
         End Try
     End Sub
+    Public Function comvEst(ByVal texto As String) As Integer
+
+
+        If texto.Equals("Activo") Then
+            Return 1
+        Else
+            Return 0
+        End If
+    End Function
 
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
         Dim m As New Modelo
@@ -64,13 +74,14 @@ Public Class ModificarResidentes
                 txtNoControl.Text = row(0).ToString()
                 txtNombre.Text = row(1).ToString()
                 txtCarrera.Text = row(2).ToString()
-                txtDomicilio.Text = row(3).ToString()
-                txtEmail.Text = row(4).ToString()
-                txtCiudad.Text = row(5).ToString()
-                txtTelefono.Text = row(6).ToString()
-                txtxSeguridadSocial.Text = row(7).ToString()
-                txtNoSeguridad.Text = row(8).ToString()
-                cbEstatus.Checked = row(9).ToString()
+                cbSexo.Text = row(3).ToString()
+                txtDomicilio.Text = row(4).ToString()
+                txtEmail.Text = row(5).ToString()
+                txtCiudad.Text = row(6).ToString()
+                txtTelefono.Text = row(7).ToString()
+                txtxSeguridadSocial.Text = row(8).ToString()
+                txtNoSeguridad.Text = row(9).ToString()
+                cbEstatus.SelectedItem = Est(row(10).ToString())
 
             Next
 
@@ -81,4 +92,11 @@ Public Class ModificarResidentes
             adCon.Close()
         End Try
     End Sub
+    Public Function Est(ByVal valor As Integer) As String
+        If valor.Equals(1) Then
+            Return "Activo"
+        Else
+            Return "Inactivo"
+        End If
+    End Function
 End Class

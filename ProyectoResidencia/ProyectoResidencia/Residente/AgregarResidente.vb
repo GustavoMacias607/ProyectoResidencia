@@ -8,7 +8,7 @@ Public Class AgregarResidente
         Try
             adCon = New MySqlConnection(m.conexion)
             adCon.open()
-            Dim sentencia As String = "call sp_ResidenteAgregar(?pNoControl,?pNombre,?pCarrera,?pDomicilio,?pEmail,?pCiudad,?pTelefono,?pSeguridadSocial,?pNoSeguridad,1)"
+            Dim sentencia As String = "call sp_ResidenteAgregar(?pNoControl,?pNombre,?pCarrera,?pSexo,?pDomicilio,?pEmail,?pCiudad,?pTelefono,?pSeguridadSocial,?pNoSeguridad,1)"
             cmCon = New MySqlCommand
             cmCon.Connection = adCon
             cmCon.CommandType = CommandType.Text
@@ -16,6 +16,7 @@ Public Class AgregarResidente
             cmCon.Parameters.AddWithValue("?pNoControl", txtNoControl.Text)
             cmCon.Parameters.AddWithValue("?pNombre", txtNombre.Text)
             cmCon.Parameters.AddWithValue("?pCarrera", txtCarrera.Text)
+            cmCon.Parameters.AddWithValue("?pSexo", cbSexo.SelectedItem)
             cmCon.Parameters.AddWithValue("?pDomicilio", txtDomicilio.Text)
             cmCon.Parameters.AddWithValue("?pEmail", txtEmail.Text)
             cmCon.Parameters.AddWithValue("?pCiudad", txtCiudad.Text)

@@ -39,7 +39,10 @@ Partial Class ModificarResidentes
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtCarrera = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cbEstatus = New System.Windows.Forms.CheckBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.cbEstatus = New System.Windows.Forms.ComboBox()
+        Me.cbSexo = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
@@ -235,7 +238,10 @@ Partial Class ModificarResidentes
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.Label34)
         Me.Panel1.Controls.Add(Me.cbEstatus)
+        Me.Panel1.Controls.Add(Me.cbSexo)
+        Me.Panel1.Controls.Add(Me.Label21)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnBuscar)
         Me.Panel1.Controls.Add(Me.txtNoSeguridad)
@@ -270,16 +276,47 @@ Partial Class ModificarResidentes
         Me.Panel1.Size = New System.Drawing.Size(1263, 508)
         Me.Panel1.TabIndex = 4
         '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label34.Location = New System.Drawing.Point(640, 397)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(97, 29)
+        Me.Label34.TabIndex = 78
+        Me.Label34.Text = "Estatus:"
+        '
         'cbEstatus
         '
-        Me.cbEstatus.AutoSize = True
-        Me.cbEstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbEstatus.Location = New System.Drawing.Point(741, 395)
+        Me.cbEstatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbEstatus.FormattingEnabled = True
+        Me.cbEstatus.Items.AddRange(New Object() {"Activo", "Inactivo"})
+        Me.cbEstatus.Location = New System.Drawing.Point(743, 394)
         Me.cbEstatus.Name = "cbEstatus"
-        Me.cbEstatus.Size = New System.Drawing.Size(107, 30)
-        Me.cbEstatus.TabIndex = 42
-        Me.cbEstatus.Text = "Estatus"
-        Me.cbEstatus.UseVisualStyleBackColor = True
+        Me.cbEstatus.Size = New System.Drawing.Size(202, 36)
+        Me.cbEstatus.TabIndex = 77
+        '
+        'cbSexo
+        '
+        Me.cbSexo.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbSexo.FormattingEnabled = True
+        Me.cbSexo.Items.AddRange(New Object() {"H", "M"})
+        Me.cbSexo.Location = New System.Drawing.Point(1133, 227)
+        Me.cbSexo.Name = "cbSexo"
+        Me.cbSexo.Size = New System.Drawing.Size(94, 36)
+        Me.cbSexo.TabIndex = 76
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label21.Location = New System.Drawing.Point(1053, 227)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(74, 29)
+        Me.Label21.TabIndex = 75
+        Me.Label21.Text = "Sexo:"
         '
         'Button1
         '
@@ -529,5 +566,8 @@ Partial Class ModificarResidentes
     Friend WithEvents btnBuscar As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btnGuardar As Button
-    Friend WithEvents cbEstatus As CheckBox
+    Friend WithEvents cbSexo As ComboBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label34 As Label
+    Friend WithEvents cbEstatus As ComboBox
 End Class

@@ -39,8 +39,15 @@ Partial Class EliminarResidente
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtCarrera = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cbSexo = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.cbEstatus = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.txtxSeguridadSocial = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.txtCiudad = New System.Windows.Forms.TextBox()
@@ -53,10 +60,6 @@ Partial Class EliminarResidente
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.cbEstatus = New System.Windows.Forms.CheckBox()
-        Me.txtNoSeguridad = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -237,6 +240,9 @@ Partial Class EliminarResidente
         Me.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.cbSexo)
+        Me.Panel1.Controls.Add(Me.Label21)
+        Me.Panel1.Controls.Add(Me.Label34)
         Me.Panel1.Controls.Add(Me.cbEstatus)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.txtNoSeguridad)
@@ -272,6 +278,50 @@ Partial Class EliminarResidente
         Me.Panel1.Size = New System.Drawing.Size(1263, 508)
         Me.Panel1.TabIndex = 4
         '
+        'cbSexo
+        '
+        Me.cbSexo.Enabled = False
+        Me.cbSexo.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbSexo.FormattingEnabled = True
+        Me.cbSexo.Items.AddRange(New Object() {"H", "M"})
+        Me.cbSexo.Location = New System.Drawing.Point(1127, 227)
+        Me.cbSexo.Name = "cbSexo"
+        Me.cbSexo.Size = New System.Drawing.Size(94, 36)
+        Me.cbSexo.TabIndex = 74
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label21.Location = New System.Drawing.Point(1047, 227)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(74, 29)
+        Me.Label21.TabIndex = 73
+        Me.Label21.Text = "Sexo:"
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label34.Location = New System.Drawing.Point(669, 405)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(97, 29)
+        Me.Label34.TabIndex = 72
+        Me.Label34.Text = "Estatus:"
+        '
+        'cbEstatus
+        '
+        Me.cbEstatus.Enabled = False
+        Me.cbEstatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cbEstatus.FormattingEnabled = True
+        Me.cbEstatus.Items.AddRange(New Object() {"Activo", "Inactivo"})
+        Me.cbEstatus.Location = New System.Drawing.Point(772, 402)
+        Me.cbEstatus.Name = "cbEstatus"
+        Me.cbEstatus.Size = New System.Drawing.Size(202, 36)
+        Me.cbEstatus.TabIndex = 71
+        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
@@ -284,6 +334,28 @@ Partial Class EliminarResidente
         Me.Button1.Text = "Examinar"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txtNoSeguridad
+        '
+        Me.txtNoSeguridad.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.txtNoSeguridad.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtNoSeguridad.Enabled = False
+        Me.txtNoSeguridad.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNoSeguridad.Location = New System.Drawing.Point(260, 407)
+        Me.txtNoSeguridad.Name = "txtNoSeguridad"
+        Me.txtNoSeguridad.Size = New System.Drawing.Size(335, 27)
+        Me.txtNoSeguridad.TabIndex = 43
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.Location = New System.Drawing.Point(260, 412)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(338, 29)
+        Me.Label19.TabIndex = 45
+        Me.Label19.Text = "_________________________"
         '
         'btnBuscar
         '
@@ -298,6 +370,17 @@ Partial Class EliminarResidente
         Me.btnBuscar.Size = New System.Drawing.Size(48, 48)
         Me.btnBuscar.TabIndex = 40
         Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(79, 407)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(175, 29)
+        Me.Label13.TabIndex = 44
+        Me.Label13.Text = "No. Seguridad:"
         '
         'txtxSeguridadSocial
         '
@@ -438,51 +521,6 @@ Partial Class EliminarResidente
         Me.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
-        'cbEstatus
-        '
-        Me.cbEstatus.AutoSize = True
-        Me.cbEstatus.Enabled = False
-        Me.cbEstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cbEstatus.Location = New System.Drawing.Point(753, 408)
-        Me.cbEstatus.Name = "cbEstatus"
-        Me.cbEstatus.Size = New System.Drawing.Size(107, 30)
-        Me.cbEstatus.TabIndex = 46
-        Me.cbEstatus.Text = "Estatus"
-        Me.cbEstatus.UseVisualStyleBackColor = True
-        '
-        'txtNoSeguridad
-        '
-        Me.txtNoSeguridad.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.txtNoSeguridad.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtNoSeguridad.Enabled = False
-        Me.txtNoSeguridad.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNoSeguridad.Location = New System.Drawing.Point(260, 407)
-        Me.txtNoSeguridad.Name = "txtNoSeguridad"
-        Me.txtNoSeguridad.Size = New System.Drawing.Size(335, 27)
-        Me.txtNoSeguridad.TabIndex = 43
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label19.Location = New System.Drawing.Point(260, 412)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(338, 29)
-        Me.Label19.TabIndex = 45
-        Me.Label19.Text = "_________________________"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(79, 407)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(175, 29)
-        Me.Label13.TabIndex = 44
-        Me.Label13.Text = "No. Seguridad:"
-        '
         'EliminarResidente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -535,8 +573,11 @@ Partial Class EliminarResidente
     Friend WithEvents btnBuscar As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEliminar As Button
-    Friend WithEvents cbEstatus As CheckBox
     Friend WithEvents txtNoSeguridad As TextBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Label34 As Label
+    Friend WithEvents cbEstatus As ComboBox
+    Friend WithEvents cbSexo As ComboBox
+    Friend WithEvents Label21 As Label
 End Class
